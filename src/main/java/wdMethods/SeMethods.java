@@ -34,22 +34,6 @@ public class SeMethods extends Reporter implements WdMethods{
 	public RemoteWebDriver driver;
 	public String sUrl,primaryWindowHandle,sHubUrl,sHubPort;
 	public String firstResLeadId ; 
-	public SeMethods() {
-		Properties prop = new Properties();
-		try {
-			prop.load(new FileInputStream(new File("./src/main/resources/config.properties")));
-			sHubUrl = prop.getProperty("HUB");
-			sHubPort = prop.getProperty("PORT");
-			sUrl = prop.getProperty("URL");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	
-
 	public void startApp(String browser) {
 		try {
 			if(browser.equalsIgnoreCase("chrome")) {
@@ -348,6 +332,7 @@ public class SeMethods extends Reporter implements WdMethods{
 	public long takeSnap(){
 		long number = (long) Math.floor(Math.random() * 900000000L) + 10000000L; 
 		try {
+			
 			FileUtils.copyFile(driver.getScreenshotAs(OutputType.FILE) , new File("./reports/images/"+number+".jpg"));
 		} catch (WebDriverException e) {
 			System.out.println("The browser has been closed.");

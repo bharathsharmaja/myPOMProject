@@ -9,6 +9,7 @@ import com.relevantcodes.extentreports.LogStatus;
 public abstract class Reporter {
 	public ExtentTest test;
 	public static ExtentReports extent;
+
 	public String testCaseName, testDescription, category, authors;
 
 	

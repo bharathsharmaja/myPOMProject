@@ -20,18 +20,10 @@ public class TC001_LoginLogOut extends ProjectMethods{
 	@Test(dataProvider="fetchData")
 	public void logInLogOut(String userName, String passWord) {
 		
-		new LoginPage(driver, test)
-		.enterUserName(userName)
-		.enterPassword(passWord)
-		.clickLogin()
-		.clickLogout();
-		
-		
-		
-		
-		
-		
-		
+	new LoginPage(driver, test)
+	.enterUserName(userName)
+	.enterPassword(passWord)
+	.clickLogin()
+	.clickLogout();
 	}
-
-}
+	}

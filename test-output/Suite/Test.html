@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/7</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 08 22:55:49 IST 2018</td>
+<td>Started on:</td><td>Thu May 24 20:36:43 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22476 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13674 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,22 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testcases.TC001_LoginLogOut.beforeMethod()'><b>beforeMethod</b><br>Test class: testcases.TC001_LoginLogOut</td>
-<td><div><pre>java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:34)
-	at utils.Reporter.reportStep(Reporter.java:44)
-	at wdMethods.SeMethods.startApp(SeMethods.java:67)
+<td><div><pre>java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:70)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+	at wdMethods.SeMethods.startApp(SeMethods.java:47)
 	at wdMethods.ProjectMethods.beforeMethod(ProjectMethods.java:33)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29876008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace29876008'><pre>java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:34)
-	at utils.Reporter.reportStep(Reporter.java:44)
-	at wdMethods.SeMethods.startApp(SeMethods.java:67)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18533805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18533805'><pre>java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:70)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
+	at wdMethods.SeMethods.startApp(SeMethods.java:47)
 	at wdMethods.ProjectMethods.beforeMethod(ProjectMethods.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -115,7 +121,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 </pre></div></td>
 <td>0</td>
-<td>testcases.TC001_LoginLogOut@7471b5</td></tr>
+<td>testcases.TC001_LoginLogOut@1143ee9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -125,25 +131,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testcases.TC006_Edit_Lead.setData()'><b>setData</b><br>Test class: testcases.TC006_Edit_Lead</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC006_Edit_Lead@136f0f5</td></tr>
+<tr>
+<td title='testcases.TC005_Merge_Lead.setData()'><b>setData</b><br>Test class: testcases.TC005_Merge_Lead</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC005_Merge_Lead@15435c</td></tr>
+<tr>
+<td title='testcases.TC004_Delete_Lead.setData()'><b>setData</b><br>Test class: testcases.TC004_Delete_Lead</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC004_Delete_Lead@109b8da</td></tr>
+<tr>
 <td title='testcases.TC002_LoginNegative.setData()'><b>setData</b><br>Test class: testcases.TC002_LoginNegative</td>
 <td></td>
 <td>0</td>
-<td>testcases.TC002_LoginNegative@157f54e</td></tr>
+<td>testcases.TC002_LoginNegative@1a03464</td></tr>
+<tr>
+<td title='testcases.TC003_Create_Lead.setData()'><b>setData</b><br>Test class: testcases.TC003_Create_Lead</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC003_Create_Lead@13fcdbd</td></tr>
 <tr>
 <td title='testcases.TC001_LoginLogOut.beforeMethod()'><b>beforeMethod</b><br>Test class: testcases.TC001_LoginLogOut</td>
 <td></td>
 <td>0</td>
-<td>testcases.TC001_LoginLogOut@7471b5</td></tr>
+<td>testcases.TC001_LoginLogOut@1143ee9</td></tr>
 <tr>
 <td title='testcases.TC001_LoginLogOut.afterMethod()'><b>afterMethod</b><br>Test class: testcases.TC001_LoginLogOut</td>
 <td></td>
 <td>0</td>
-<td>testcases.TC001_LoginLogOut@7471b5</td></tr>
+<td>testcases.TC001_LoginLogOut@1143ee9</td></tr>
 <tr>
 <td title='testcases.TC001_LoginLogOut.afterMethod()'><b>afterMethod</b><br>Test class: testcases.TC001_LoginLogOut</td>
 <td></td>
 <td>0</td>
-<td>testcases.TC001_LoginLogOut@7471b5</td></tr>
+<td>testcases.TC001_LoginLogOut@1143ee9</td></tr>
 <tr>
 <td title='testcases.TC001_LoginLogOut.afterTest()'><b>afterTest</b><br>Test class: testcases.TC001_LoginLogOut</td>
 <td></td>
@@ -158,20 +184,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TC001_LoginLogOut.logInLogOut()'><b>logInLogOut</b><br>Test class: testcases.TC001_LoginLogOut<br>Parameters: DemoSalesManager, crmsfa</td>
-<td></td>
-<td>0</td>
-<td>testcases.TC001_LoginLogOut@7471b5</td></tr>
-<tr>
-<td title='testcases.TC001_LoginLogOut.logInLogOut()'><b>logInLogOut</b><br>Test class: testcases.TC001_LoginLogOut<br>Parameters: DemoCSR, crmsfa</td>
-<td></td>
-<td>0</td>
-<td>testcases.TC001_LoginLogOut@7471b5</td></tr>
-<tr>
-<td title='testcases.TC002_LoginNegative.loginFail()'><b>loginFail</b><br>Test class: testcases.TC002_LoginNegative</td>
+<td title='testcases.TC003_Create_Lead.CreateLeadTest()'><b>CreateLeadTest</b><br>Test class: testcases.TC003_Create_Lead</td>
 <td><div><pre>java.lang.NullPointerException
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10204381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace10204381'><pre>java.lang.NullPointerException
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3171434", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace3171434'><pre>java.lang.NullPointerException
 	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:150)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
 	at org.testng.internal.Invoker.handleParameters(Invoker.java:1269)
@@ -195,7 +211,133 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 </pre></div></td>
 <td>0</td>
-<td>testcases.TC002_LoginNegative@157f54e</td></tr>
+<td>testcases.TC003_Create_Lead@13fcdbd</td></tr>
+<tr>
+<td title='testcases.TC006_Edit_Lead.DeleteLeadTest()'><b>DeleteLeadTest</b><br>Test class: testcases.TC006_Edit_Lead</td>
+<td><div><pre>java.lang.NullPointerException
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6637109", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6637109'><pre>java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:150)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1269)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>testcases.TC006_Edit_Lead@136f0f5</td></tr>
+<tr>
+<td title='testcases.TC004_Delete_Lead.DeleteLeadTest()'><b>DeleteLeadTest</b><br>Test class: testcases.TC004_Delete_Lead</td>
+<td><div><pre>java.lang.NullPointerException
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29346557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29346557'><pre>java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:150)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1269)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>testcases.TC004_Delete_Lead@109b8da</td></tr>
+<tr>
+<td title='testcases.TC005_Merge_Lead.MergeLeadTest()'><b>MergeLeadTest</b><br>Test class: testcases.TC005_Merge_Lead</td>
+<td><div><pre>java.lang.NullPointerException
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23047263", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23047263'><pre>java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:150)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1269)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>testcases.TC005_Merge_Lead@15435c</td></tr>
+<tr>
+<td title='testcases.TC001_LoginLogOut.logInLogOut()'><b>logInLogOut</b><br>Test class: testcases.TC001_LoginLogOut<br>Parameters: DemoSalesManager, crmsfa</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC001_LoginLogOut@1143ee9</td></tr>
+<tr>
+<td title='testcases.TC001_LoginLogOut.logInLogOut()'><b>logInLogOut</b><br>Test class: testcases.TC001_LoginLogOut<br>Parameters: DemoCSR, crmsfa</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC001_LoginLogOut@1143ee9</td></tr>
+<tr>
+<td title='testcases.TC002_LoginNegative.loginFail()'><b>loginFail</b><br>Test class: testcases.TC002_LoginNegative</td>
+<td><div><pre>java.lang.NullPointerException
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23553202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23553202'><pre>java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:150)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1269)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>testcases.TC002_LoginNegative@1a03464</td></tr>
 </table><p>
 </body>
 </html>

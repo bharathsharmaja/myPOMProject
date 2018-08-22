@@ -20,8 +20,7 @@ public class CreateLeadPage extends ProjectMethods{
 		this.driver = driver;
 		this.test = test;
 				
-		PageFactory.initElements(driver, this);		
-	
+		PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(how=How.ID,using="createLeadForm_companyName")

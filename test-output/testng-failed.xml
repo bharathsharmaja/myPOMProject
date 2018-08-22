@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
     <classes>
       <class name="testcases.TC005_Merge_Lead">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="beforeSuite"/>
-          <include name="setData"/>
-          <include name="afterSuite"/>
-          <include name="afterMethod"/>
-          <include name="CreateLeadTest" invocation-numbers="0"/>
-          <include name="beforeMethod"/>
+          <include name="MergeLeadTest"/>
         </methods>
       </class> <!-- testcases.TC005_Merge_Lead -->
+      <class name="testcases.TC004_Delete_Lead">
+        <methods>
+          <include name="DeleteLeadTest"/>
+        </methods>
+      </class> <!-- testcases.TC004_Delete_Lead -->
+      <class name="testcases.TC002_LoginNegative">
+        <methods>
+          <include name="loginFail"/>
+        </methods>
+      </class> <!-- testcases.TC002_LoginNegative -->
+      <class name="testcases.TC006_Edit_Lead">
+        <methods>
+          <include name="DeleteLeadTest"/>
+        </methods>
+      </class> <!-- testcases.TC006_Edit_Lead -->
+      <class name="testcases.TC001_LoginLogOut">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="setData"/>
+          <include name="beforeSuite"/>
+          <include name="logInLogOut"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.TC001_LoginLogOut -->
+      <class name="testcases.TC003_Create_Lead">
+        <methods>
+          <include name="CreateLeadTest"/>
+        </methods>
+      </class> <!-- testcases.TC003_Create_Lead -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
